@@ -18,7 +18,7 @@
 
               
               
-              <div class = "badge" data-md-tooltip="Not Validated" id="greycheck">
+              <div class = "badge" data-md-tooltip="Support Level" id = external_active >
               <!-- &#10039; -->
               </div>
               
@@ -52,8 +52,7 @@
                 </button>
               </a>
               
-              <button class = "IconButton" title="need support?">
-                ?
+              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
               </button>
 
         </div>
@@ -68,6 +67,7 @@
 
               </div>
 
+
               
               <a class = "pdfIcon" title="download pdf"
                 href="https://github.com/PIFSCstockassessments/AGEPRO-GUI/raw/master/doc/AGEPRO_v4.2_Reference_Manual.pdf" download>
@@ -80,6 +80,7 @@
               Version 4.3.1
               </button>
         </div>
+
         <div class ="label">
             
               Type:  age structured model
@@ -87,13 +88,14 @@
         </div>
 
         <div class = "authName">
-         author: Brodziak, J. and E. Fletcher
+         Author: Brodziak, J. and E. Fletcher
 
         </div >
 
         <div class ="mainText">
           The Age Structured Projection Model (AGEPRO) is a projection model for an age-structured fish stock harvested by one or more fleets. AGEPRO was designed to evaluate the probable effects of applying alternative harvest strategies to a fish stock under alternative hypotheses about its stock-recruitment relationship. Uncertainty in the initial stock size at age at the start of the projection time horizon is also incorporated into the model.  AGEPRO interfaces directly with VPA/ADAPT  or ASAP assessment models. It can use bootstrapped or Markov Chain Monte Carlo estimates of initial population size derived from VPA/ADAPT or ASAP or from any age-structured model. AGEPRO uses Monte Carlo simulation to evaluate the probabilities of achieving targets for fishing mortality or stock size, to calculate the probabilities of exceeding biological reference point thresholds, and to calculate the expected future age structure of the and the fishery landings.  The latest version of AGEPRO allows the user to incorporate uncertainty in weights at age, natural mortality, maturity, fishery selectivity, and discard fraction. Additional features include the capacity to calculate annual catch limits with user-specified probabilities of exceeding an overfishing level and the capability to search for rebuilding strategies that achieve user-specified outcomes.  The AGEPRO calculation engine is written in C. It was developed by Dr. Jon Brodziak of NMFS Pacific Islands Fisheries Science Center with contributions by Dr. Paul Rago, NMFS NEFSC and others. The new graphical user interface has been written in C#.
         </div>
+
         <div class="mainText">
         
           <div class = "ref">
@@ -108,23 +110,44 @@
             </ul>
           
 
+
           
           <div class = "ref">
             Associated Tools
           </div>
             <ul id = "assocaited_tools">
               
-              <li>AGEPRO Core Library: https://github.com/PIFSCstockassessments/AGEPRO-CoreLib</li>
+                <li><a href="https://github.com/PIFSCstockassessments/AGEPRO-CoreLib"><i>AGEPRO Core Library</i></a></li>
               
             </ul>
               
-            </div>
+
+            
+              <div class = "ref">
+            Code Repository Badges
+          </div>
+             
+
+              
+              <img src="https://www.repostatus.org/badges/latest/active.svg">
+              
+              
+
+          </div>
       </div>
 
       <div class = "divider"></div>
-        <footer> <a class ="mylink" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
-    <a class ="mylink" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
-    <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a></footer>
+
+        <footer >
+             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75px">
+         <div class="mywrap_center">
+          <a class ="mylink" id = "line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink" id = "line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
 
     </div>
 
